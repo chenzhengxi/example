@@ -1,0 +1,22 @@
+cmake_minimum_required(VERSION 3.0)
+project(FunixActor VERSION "1.0.0")
+
+SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}")
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
+SET(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -O0 -W -g -ggdb")
+SET(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -Ofast -W -Wall")
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+SET(SRC_LIST
+    FunixActor.cpp
+    )
+
+set(THREADS_PREFER_PTHREAD_FLAG ON)
+find_package(Threads REQUIRED)
+
+
+add_library(${PROJECT_NAME} SHARED ${SRC_LIST})
+TARGET_LINK_LIBRARIES(${PROJECT_NAME} pthread Boost::system Boost::date_time stdc++fs)
+

@@ -1,0 +1,48 @@
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Libraries
+*.lib
+*.a
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+*.weights
+*.engine
+
+build/
+gesturevideo/
+CMakeFiles/
+gesturelib/CMakeFiles/
+CMakeLists.txt.user
+CMakeCache.txt
+*.cmake
+Makefile
+*.user
+log.txt
+reboot.txt
+temp.dat
+gesture
+*.cbp
+*.dat
+.vs/
+*.log
+.vscode/
+libs_aarch64/
+libs_x86_64/
+*.db
+*.mp4
+*.h264
+
