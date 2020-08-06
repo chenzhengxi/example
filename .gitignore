@@ -19,9 +19,12 @@
 *.i*86
 *.x86_64
 *.hex
+*.onnx
+*.pth
 *.weights
 *.engine
 
+backup/
 build/
 gesturevideo/
 CMakeFiles/
@@ -42,6 +45,7 @@ gesture
 .vscode/
 libs_aarch64/
 libs_x86_64/
+bin_x86_64/data/
 *.db
 *.mp4
 *.h264
